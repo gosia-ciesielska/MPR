@@ -25,7 +25,7 @@ public class Main {
             Order order3 = pizzaService.makeOrder(new Pizza("Pepperoni", 16.00));
             System.out.println(order3);
         } catch (PizzaNotFoundException e) {
-            logger.error(e.getStackTrace());
+            logger.error(e.getMessage());
         }
     }
 }
